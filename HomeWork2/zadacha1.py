@@ -14,17 +14,18 @@ orel = 0
 for _ in range(n): # кидаем монетки :)
     coins.append(randint(0,1))
 
-for i in coins:
+for i in range(n):
     if coins[i] == 0:
         reshka += 1
-        
-    else:
+    elif coins[i] == 1:
         orel += 1
 
 print(coins)
+print(reshka,orel)
 
 if reshka <= orel:
     print("{} - монет нужно перевернуть.".format(reshka))
+
 else:
     print("{} - монет нужно перевернуть.".format(orel))
 
