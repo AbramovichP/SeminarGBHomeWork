@@ -4,5 +4,27 @@
 чтобы все монетки были повернуты вверх одной и той же стороной. 
 Выведите минимальное количество монет, которые нужно перевернуть
 """
-n = int(input()) # число монеток
+from random import randint
+    
+n = int(input("Введите кол-во монеток:\n")) # число монеток
+coins = []
+reshka = 0
+orel = 0
+
+for _ in range(n): # кидаем монетки :)
+    coins.append(randint(0,1))
+
+for i in coins:
+    if coins[i] == 0:
+        reshka += 1
+        
+    else:
+        orel += 1
+
+print(coins)
+
+if reshka <= orel:
+    print("{} - монет нужно перевернуть.".format(reshka))
+else:
+    print("{} - монет нужно перевернуть.".format(orel))
 
