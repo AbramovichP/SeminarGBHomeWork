@@ -21,11 +21,10 @@ for i in range(n):
         orel += 1
 
 print(coins)
-print(reshka,orel)
 
 if reshka <= orel:
-    print("{} - монет нужно перевернуть.".format(reshka))
+    print("{} - монет(-ы) нужно перевернуть.".format(reshka))
 
 else:
-    print("{} - монет нужно перевернуть.".format(orel))
+    print("{} - монет(-ы) нужно перевернуть.".format(orel))
 
