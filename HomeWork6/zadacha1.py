@@ -5,9 +5,9 @@
 Вывод: 7 9 11 13 15
 """
 def creat_list(a,n,d):
-    list_1 = [a]
-    for i in range(2,n+1):
-        list_1.append(a + (i-1) * d)    
+    list_1 = []
+    for i in range(n):
+        list_1.append(a + i * d)    
     return list_1
 
 a1 = int(input("Введите первый элемент: "))
